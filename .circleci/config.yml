@@ -24,8 +24,8 @@ jobs:
     steps:
       - checkout
       - run: 
-        name: deploy
-        command: $DOCKER_HUB_TRIGGER
+          name: deploy
+          command: $DOCKER_HUB_TRIGGER
 workflows:
   version: 2
   build_and_test:
