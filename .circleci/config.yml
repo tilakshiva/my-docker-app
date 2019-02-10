@@ -19,6 +19,8 @@ jobs:
           name: Test
           command: npm test
   deploy:
+    docker: 
+      - image: circleci/node:4.8.2
     steps:
       - run:
           name: deploy
