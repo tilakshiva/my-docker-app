@@ -34,7 +34,7 @@ jobs:
           name: Build and push Docker image
           command: |
             docker build -t tilakshiva/$IMAGE_NAME:$TAG .
-            echo $DOCKER_PWD | docker login -u $DOCKER_LOGIN --password-stdin
+            echo $DOCKER_PWD | docker login -u $DOCKER_LOGIN -p $DOCKER_PWD
             docker push tilakshiva/$IMAGE_NAME:$TAG
 workflows:
   version: 2
