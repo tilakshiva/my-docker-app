@@ -25,7 +25,11 @@ jobs:
       - checkout
       - run: 
           name: deploy
+
           command: curl -H "Content-Type:application/json" --data '{"build":true}' -X POST  $DOCKER_HUB_TRIGGER
+
+          command: $DOCKER_HUB_TRIGGER
+
 workflows:
   version: 2
   build_and_test:
