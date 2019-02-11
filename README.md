@@ -1,1 +1,1 @@
-Added READ me file
+The STRATEGY TEAM Superstarts
