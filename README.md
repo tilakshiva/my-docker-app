@@ -1,1 +1,1 @@
-The STRATEGY TEAM Superstarts
+The STRATEGY TEAM Superstars
